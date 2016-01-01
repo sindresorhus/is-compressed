@@ -1,13 +1,11 @@
-'use strict';
-var test = require('ava');
-var isCompressed = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(isCompressed('unicorn.zip'));
-	t.assert(isCompressed('unicorn.7z'));
-	t.assert(isCompressed('unicorn.ZIP'));
-	t.assert(!isCompressed('unicorn.png'));
-	t.assert(!isCompressed('unicornzip'));
-	t.assert(!isCompressed('unicorn.txt'));
-	t.end();
+test(t => {
+	t.true(m('unicorn.zip'));
+	t.true(m('unicorn.7z'));
+	t.true(m('unicorn.ZIP'));
+	t.false(m('unicorn.png'));
+	t.false(m('unicornzip'));
+	t.false(m('unicorn.txt'));
 });
