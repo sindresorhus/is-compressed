@@ -1,11 +1,11 @@
 import test from 'ava';
-import m from './';
+import isCompressed from '.';
 
-test(t => {
-	t.true(m('unicorn.zip'));
-	t.true(m('unicorn.7z'));
-	t.true(m('unicorn.ZIP'));
-	t.false(m('unicorn.png'));
-	t.false(m('unicornzip'));
-	t.false(m('unicorn.txt'));
+test('main', t => {
+	t.true(isCompressed('unicorn.zip'));
+	t.true(isCompressed('unicorn.7z'));
+	t.true(isCompressed('unicorn.ZIP'));
+	t.false(isCompressed('unicorn.png'));
+	t.false(isCompressed('unicornzip'));
+	t.false(isCompressed('unicorn.txt'));
 });

@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save is-compressed
+$ npm install is-compressed
 ```
 
 
 ## Usage
 
 ```js
-var isCompressed = require('is-compressed');
+const isCompressed = require('is-compressed');
 
 isCompressed('src/unicorn.zip');
 //=> true
@@ -30,4 +30,4 @@ isCompressed('src/unicorn.txt');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
