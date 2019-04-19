@@ -1,17 +1,17 @@
 /**
-Check if a filepath is a compressed file.
+Check if a file path is a compressed file.
 
 @example
 ```
 import isCompressed = require('is-compressed');
 
-isCompressed('src/unicorn.zip');
+isCompressed('source/unicorn.zip');
 //=> true
 
-isCompressed('src/unicorn.txt');
+isCompressed('source/unicorn.txt');
 //=> false
 ```
 */
-declare function isCompressed(filepath: string): boolean;
+declare function isCompressed(filePath: string): boolean;
 
 export = isCompressed;

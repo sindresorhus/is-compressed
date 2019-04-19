@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
 import isCompressed = require('.');
 
-expectType<boolean>(isCompressed('src/unicorn.zip'));
+expectType<boolean>(isCompressed('source/unicorn.zip'));
