@@ -37,7 +37,7 @@
 		"7z"
 	],
 	"dependencies": {
-		"compressed-extensions": "^1.0.1"
+		"compressed-extensions": "^2.0.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",
