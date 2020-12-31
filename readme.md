@@ -1,4 +1,4 @@
-# is-compressed [![Build Status](https://travis-ci.org/sindresorhus/is-compressed.svg?branch=master)](https://travis-ci.org/sindresorhus/is-compressed)
+# is-compressed
 
 > Check if a file path is a compressed file
 
