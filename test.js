@@ -1,5 +1,5 @@
 import test from 'ava';
-import isCompressed from '.';
+import isCompressed from './index.js';
 
 test('main', t => {
 	t.true(isCompressed('unicorn.zip'));
